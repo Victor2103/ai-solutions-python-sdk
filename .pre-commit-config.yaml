@@ -4,11 +4,12 @@ repos:
     hooks:
       - id: isort
         language_version: python3
-  #- repo: https://github.com/psf/black
-  #  rev: 22.3.0
-  #  hooks:
-  #    - id: black
-  #      language_version: python3
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        args: ['-t','py35','-l','88']
+        language_version: python3
   - repo: https://github.com/pycqa/flake8
     rev: 4.0.1
     hooks:
