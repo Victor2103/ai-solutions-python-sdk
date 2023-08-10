@@ -1,0 +1,65 @@
+{
+    "id": "8e180906-f487-449d-8be7-d0cbf475fe87",
+    "createdAt": "2023-08-03T16:50:39.728614502Z",
+    "updatedAt": "2023-08-03T16:50:39.728614502Z",
+    "user": "admin",
+    "spec": {
+        "name": "ubuntu-brave",
+        "labels": {
+            "label": "value",
+            "ovh/id": "8e180906-f487-449d-8be7-d0cbf475fe87",
+            "ovh/type": "job"
+        },
+        "image": "ubuntu",
+        "envVars": [],
+        "command": [],
+        "volumes": [],
+        "timeout": 0,
+        "timeoutAutoRestart": false,
+        "defaultHttpPort": 7000,
+        "unsecureHttp": false,
+        "deletionRequested": false,
+        "resources": {
+            "gpu": 1,
+            "cpu": 13,
+            "flavor": "ai1-1-gpu",
+            "gpuMemory": 34359738368,
+            "gpuModel": "Tesla-V100S",
+            "gpuBrand": "NVIDIA",
+            "memory": 42949672960,
+            "ephemeralStorage": 805306368000,
+            "publicNetwork": 1500000000,
+            "privateNetwork": 0
+        }
+    },
+    "status": {
+        "nodeName": null,
+        "ip": null,
+        "exitCode": null,
+        "state": "QUEUED",
+        "lastTransitionDate": "2023-08-03T16:50:39.728480356Z",
+        "externalIp": null,
+        "info": {
+            "code": "JOB_QUEUED",
+            "arguments": {},
+            "message": "Job submitted"
+        },
+        "dataSync": [],
+        "volumes": [],
+        "history": [
+            {
+                "state": "QUEUED",
+                "date": "2023-08-03T16:50:39.728480356Z"
+            }
+        ],
+        "duration": 0,
+        "url": "https://8e180906-f487-449d-8be7-d0cbf475fe87.job.gra.ai.cloud.ovh.net",
+        "infoUrl": "https://ui.gra.ai.cloud.ovh.net/job/8e180906-f487-449d-8be7-d0cbf475fe87",
+        "queuedAt": "2023-08-03T16:50:39.728480356Z",
+        "initializingAt": null,
+        "startedAt": null,
+        "stoppedAt": null,
+        "finalizedAt": null,
+        "timeoutAt": null
+    }
+}
