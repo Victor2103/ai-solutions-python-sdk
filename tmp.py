@@ -10,4 +10,9 @@ telegram_webhook_block = AppriseNotificationBlock(
     url=f"tgram://{os.getenv('API_TELEGRAM')}/{os.getenv('CHAT_ID')}/"
 )
 
-telegram_webhook_block.notify("Hello from Prefect!")
+print(telegram_webhook_block.notify_type)
+
+try:
+    print(telegram_webhook_block.notify("Hello from Prefect!"))
+except Exception:
+    print("NOT GOOD")
