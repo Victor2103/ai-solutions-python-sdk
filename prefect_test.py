@@ -1,3 +1,4 @@
+import json
 import os
 
 from dotenv import load_dotenv
@@ -16,4 +17,4 @@ flow = create_job_and_wait_until_is_done(
     api_telegram=os.getenv("API_TELEGRAM"),
     chat_id=os.getenv("CHAT_ID"),
 )
-print("Here is your job : ", flow)
+print("Here is your job : ", json.dumps(flow, indent=4))
